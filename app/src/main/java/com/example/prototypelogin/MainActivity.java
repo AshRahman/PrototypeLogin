@@ -2,6 +2,7 @@ package com.example.prototypelogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
                    //correct
                    Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
+                   Intent i = new Intent(MainActivity.this,Dashboard.class);
+                    startActivity(i);
                }
                else{
                    Toast.makeText(MainActivity.this,"Try again",Toast.LENGTH_SHORT).show();
