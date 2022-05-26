@@ -12,6 +12,6 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
         TextView data=findViewById(R.id.data);
-        data.setText("This is second activity");
+        data.setText("Dashboard");
     }
 }
